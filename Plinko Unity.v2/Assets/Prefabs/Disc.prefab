@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1304706075382113432}
   - component: {fileID: 809977757669209968}
   - component: {fileID: 1083476867987396174}
+  - component: {fileID: 5284520155278195194}
   m_Layer: 0
   m_Name: Disc
   m_TagString: Untagged
@@ -155,3 +156,15 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &5284520155278195194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6296160249758113398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fcc92cac1f7be478731ac2a972ea06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DiscNotifier

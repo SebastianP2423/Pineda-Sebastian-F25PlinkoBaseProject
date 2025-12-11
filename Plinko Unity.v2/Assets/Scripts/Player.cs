@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
 
     void DropDisc()
     {
-        // 
         if (Input.GetButtonDown("Fire1") && activeDisc == null)
         {
             Vector3 position = transform.position;
@@ -27,9 +26,12 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        // 
         float movementX = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
         Vector3 offset = new Vector3(movementX, 0, 0);
         transform.position += offset;
+    }
+    public void NotifyDiscDestroyed()
+    {
+        activeDisc = null;
     }
 }
