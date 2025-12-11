@@ -23,9 +23,14 @@ public class CameraFollow : MonoBehaviour
 
         camera.transform.position = Vector3.Lerp(camera.transform.position, targetPosition, lerpRate);
     }
+    
 
     public void FollowDisc(GameObject disc)
     {
         this.disc = disc;
+    }
+    public void FollowPlayer()
+    {
+        disc = null;
     }
 }
